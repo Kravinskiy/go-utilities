@@ -1,10 +1,10 @@
 package models;
 
 type StockPriceDaily struct {
-	id int
-	ticker_symbol_id int
-	open_price float32
-	high_price float32
-	current_price float32
-	created_at string
+	Id int
+	Ticker_symbol_id int
+	Ppen_price float32
+	High_price float32
+	Current_price float32
+	Created_at string
 }

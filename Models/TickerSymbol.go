@@ -1,12 +1,12 @@
 package models;
 
 type TickerSymbol struct {
-	id int
-	currency string
-	description string
-	symbol string
-	security_type string
-	stock_exchange string
-	active bool
-	created_at string 
+	Id int
+	Durrency string
+	Description string
+	Symbol string
+	Security_type string
+	Stock_exchange string
+	Active bool
+	Created_at string 
 }
