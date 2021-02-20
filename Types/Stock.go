@@ -1,4 +1,4 @@
-package Stock
+package stock
 
 type Stock struct {
 	Currency string
