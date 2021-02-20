@@ -2,7 +2,7 @@ package models;
 
 type TickerSymbol struct {
 	Id int
-	Durrency string
+	Currency string
 	Description string
 	Symbol string
 	Security_type string
