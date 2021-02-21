@@ -10,7 +10,7 @@ import (
 )
 
 // Backward compatibility: providing connection params as command line arguments
-func GetConnection(username *string, password *string, dbName *string, dbHost *string, port *string) (db *gorm.DB, err error) {
+func GetConnection(username *string, password *string, dbHost *string, port *string, dbName *string) (db *gorm.DB, err error) {
 	
 	if username == nil || password == nil || dbName == nil || dbHost == nil {
 		e := godotenv.Load()
