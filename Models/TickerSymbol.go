@@ -6,12 +6,11 @@ import (
 
 type TickerSymbol struct {
 	gorm.Model
-	Id int
+	ID int
 	Currency string
 	Description string
 	Symbol string
-	Security_type string
-	Stock_exchange string
+	SecurityType string
+	StockExchange string
 	Active bool
-	Created_at string 
 }

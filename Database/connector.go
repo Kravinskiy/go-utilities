@@ -22,11 +22,13 @@ func GetConnection(username *string, password *string, dbName *string, dbHost *s
 		envPassword := os.Getenv("db_password")
 		envDbName := os.Getenv("db_name")
 		envDbHost := os.Getenv("db_host")
+		envDbPort := os.Getenv("db_port")
 
 		username = &envUsername
 		password = &envPassword
 		dbName = &envDbName
 		dbHost = &envDbHost
+		port = &envDbPort
 	}
 
 	dbURI := functions.GetMysqlDsn(*username, *password, *dbHost, *port, *dbName)

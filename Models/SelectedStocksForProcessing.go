@@ -6,6 +6,7 @@ import (
 
 type SelectedStocksForProcessing struct {
 	gorm.Model
-	Id int
-	Ticker_symbol_id int
+	ID int
+	TickerSymbolID int
+	TickerSymbol TickerSymbol
 }
