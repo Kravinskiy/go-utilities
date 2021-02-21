@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func getFinnhubToken() (string, error) {
+func GetFinnhubToken() (string, error) {
 	e := godotenv.Load()
 	if e != nil {
 		return "", e

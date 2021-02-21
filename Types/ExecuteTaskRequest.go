@@ -1,6 +1,6 @@
 package types
 
-type executeTaskRequest struct {
+type ExecuteTaskRequest struct {
 	Type string `json:"type"`
 	Currency  string `json:"currency"`
 	Ticker_Symbol string `json:"ticker_symbol"`
