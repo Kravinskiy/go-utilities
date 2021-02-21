@@ -1,15 +1,15 @@
-package Functions
+package functions
 
 import (
 	"github.com/joho/godotenv"
 	"os"
 )
 
-func getFinnhubToken() string {
+func getFinnhubToken() (string, error) {
 	e := godotenv.Load()
 	if e != nil {
-		fmt.Println(e)
+		return "", e
 	}
 
-	return os.Getenv("finnhub_token")
+	return os.Getenv("finnhub_token"), nil
 }
