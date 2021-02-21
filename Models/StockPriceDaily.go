@@ -1,8 +1,13 @@
 package models;
 
+import (
+	"gorm.io/gorm"
+)
+
 const StockPriceDailyType = "StockPriceDaily"
 
 type StockPriceDaily struct {
+	gorm.Model
 	ID int
 	TickerSymbolID int
 	TickerSymbol TickerSymbol
