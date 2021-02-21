@@ -8,10 +8,10 @@ const StockPriceDailyType = "StockPriceDaily"
 
 type StockPriceDaily struct {
 	gorm.Model
-	ID int
-	TickerSymbolID int
-	TickerSymbol TickerSymbol
-	OpenPrice float32
-	HighPrice float32
-	CurrentPrice float32
+	ID int `json:"id"`
+	TickerSymbolID int `json:"tickerSymbolId"`
+	TickerSymbol TickerSymbol `json:"tickerSymbol"`
+	OpenPrice float32 `json:"openPrice"`
+	HighPrice float32 `json:"highProce"`
+	CurrentPrice float32 `json:"currentPrice"`
 }

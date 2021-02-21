@@ -6,9 +6,9 @@ import (
 
 type SelectedStocksForProcessing struct {
 	gorm.Model
-	ID int
-	TickerSymbolID int
-	TickerSymbol TickerSymbol
+	ID int `json:"id"`
+	TickerSymbolID int `json:"tickerSymbolId"`
+	TickerSymbol TickerSymbol `json:"tickerSmybol"`
 }
 
 type Tabler interface {
