@@ -1,5 +1,7 @@
 package models;
 
+const StockPriceDailyType = "StockPriceDaily"
+
 type StockPriceDaily struct {
 	ID int
 	TickerSymbolID int
