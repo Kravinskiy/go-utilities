@@ -1,6 +1,11 @@
 package models;
 
+import (
+	"gorm.io/gorm"
+)
+
 type TickerSymbol struct {
+	gorm.Model
 	Id int
 	Currency string
 	Description string

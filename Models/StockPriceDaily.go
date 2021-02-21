@@ -1,6 +1,11 @@
 package models;
 
+import (
+	"gorm.io/gorm"
+)
+
 type StockPriceDaily struct {
+	gorm.Model
 	Id int
 	Ticker_symbol_id int
 	Ppen_price float32
