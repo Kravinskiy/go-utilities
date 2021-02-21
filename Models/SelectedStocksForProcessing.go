@@ -6,7 +6,6 @@ import (
 
 type SelectedStocksForProcessing struct {
 	gorm.Model
-	ID int `json:"id"`
 	TickerSymbolID int `json:"tickerSymbolId"`
 	TickerSymbol TickerSymbol `json:"tickerSmybol"`
 }
