@@ -1,10 +1,8 @@
 package database
 
 import (
-	"fmt"
 	"gorm.io/gorm"
 	"gorm.io/driver/mysql"
-	"github.com/joho/godotenv"
 	"os"
 	"github.com/Kravinskiy/go-utilities/Functions"
 )
@@ -13,11 +11,6 @@ import (
 func GetConnection(username *string, password *string, dbHost *string, port *string, dbName *string) (db *gorm.DB, err error) {
 	
 	if username == nil || password == nil || dbName == nil || dbHost == nil {
-		e := godotenv.Load()
-		if e != nil {
-			fmt.Println(e)
-		}
-
 		envUsername := os.Getenv("db_user")
 		envPassword := os.Getenv("db_password")
 		envDbName := os.Getenv("db_name")
