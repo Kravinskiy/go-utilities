@@ -14,4 +14,5 @@ type StockPriceDaily struct {
 	OpenPrice float32 `json:"openPrice"`
 	HighPrice float32 `json:"highProce"`
 	CurrentPrice float32 `json:"currentPrice"`
+	PreviousClosePrice float32 `json:"previousClosePrice"`
 }
