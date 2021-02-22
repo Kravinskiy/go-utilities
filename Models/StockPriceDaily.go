@@ -14,6 +14,7 @@ type StockPriceDaily struct {
 	HighPrice float32 `json:"highProce"`
 	CurrentPrice float32 `json:"currentPrice"`
 	PreviousClosePrice float32 `json:"previousClosePrice"`
+	LowPrice float32 `json:"lowPrice"`
 }
   
 func (StockPriceDaily) TableName() string {
