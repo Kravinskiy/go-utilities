@@ -15,3 +15,8 @@ type StockPriceDaily struct {
 	CurrentPrice float32 `json:"currentPrice"`
 	PreviousClosePrice float32 `json:"previousClosePrice"`
 }
+  
+func (StockPriceDaily) TableName() string {
+	// By default it is `stock_price_dailies` - which is wrong. So override that
+	return "stock_price_daily"
+}
