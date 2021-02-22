@@ -10,11 +10,11 @@ type StockPriceDaily struct {
 	gorm.Model
 	TickerSymbolID int `json:"tickerSymbolId"`
 	TickerSymbol TickerSymbol `json:"tickerSymbol"`
-	OpenPrice float32 `json:"openPrice"`
-	HighPrice float32 `json:"highProce"`
-	CurrentPrice float32 `json:"currentPrice"`
-	PreviousClosePrice float32 `json:"previousClosePrice"`
-	LowPrice float32 `json:"lowPrice"`
+	OpenPrice float64 `json:"openPrice"`
+	HighPrice float64 `json:"highProce"`
+	CurrentPrice float64 `json:"currentPrice"`
+	PreviousClosePrice float64 `json:"previousClosePrice"`
+	LowPrice float64 `json:"lowPrice"`
 }
   
 func (StockPriceDaily) TableName() string {
