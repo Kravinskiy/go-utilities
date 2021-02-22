@@ -15,6 +15,14 @@ type StockPriceDaily struct {
 	CurrentPrice float64 `json:"currentPrice"`
 	PreviousClosePrice float64 `json:"previousClosePrice"`
 	LowPrice float64 `json:"lowPrice"`
+	TrailingPe float64 `json:"trailingPe"`
+	ForwardPe float64 `json:"forwardPe"`
+	BookValue float64 `json:"bookValue"`
+	PriceToBook float64 `json:"priceToBook"`
+	TrailingAnnualDividendYield float64 `json:"TrailingAnnualDividendYield"`
+	TrailingAnnualDividendRate float64 `json:"TrailingAnnualDividendRate"`
+	MarketCap int64 `json:"MarketCap"`
+	SharesOutstanding int `json:"SharesOutstanding"`
 }
   
 func (StockPriceDaily) TableName() string {
